@@ -1,0 +1,52 @@
+<html>
+  <head>
+     <title> Sustainable Development Goal  </title>
+	 </head>
+	 <style>
+	 #splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#splash-screen.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-out;
+}
+
+	 </style>
+	 <body>
+	 <div id="splash-screen">
+  <img src="loading-cat.gif" alt="Loading..." />
+</div>
+	 <a href="file:///D:/Jandrei%20School%20Files/3rd%20YEAR%20FEU%20TECH%20FILES/Programming/MyProjectFile/MyProjectFile/projects.html">Go back to Projects page</a>
+	 <center> <img src = "sdg2 1.png" width = "1200x" height = "408x"> 
+	 <h1> <font color = "brown" size = "8" > <b> Zero Hunger <b/> </h1>
+	 <img src = "sgd2.png" width = "500x" height = "500x">
+	 <p> <i> <font color = "orange" size = "5"> Zero hunger is global problem and this goal must achieved for ending hunger, achive food security and can promote agriculture  by 2030. It focuses for people 
+    can hep especially the poor to be safe and have nurtrition in their food. Through this can address malnutrition such undernutrition, hidden hunger and overweight. This goal is part of United Nation Sustainable development 
+	goals or SDGs  	 </font> </p>
+	<img src = "sdg2 3.jpg" width = "500x" height = "500x">
+	<p> <a href = "https://sdgs.un.org/goals/goal2"> <font color = "black" size = "5"> <mark> Other info for no hunger click here! </mark> </font> </p> </center>
+	<script>
+  window.addEventListener("load", () => {
+  const splash = document.getElementById("splash-screen");
+  setTimeout(() => {
+    splash.classList.add("fade-out");
+  }, 5000); 
+  setTimeout(() => {
+    splash.style.display = "none";
+  }, 4000);
+});
+
+</script>
+	 </body>
+	 

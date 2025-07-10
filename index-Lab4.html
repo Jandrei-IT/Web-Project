@@ -1,0 +1,70 @@
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> UN SDGs </title>
+  <link rel="stylesheet" href="styles-Lab4.css">
+   </head>
+  <body>
+  <div id="splash-screen">
+  <img src="loading-cat.gif" alt="Loading..." />
+</div>
+
+  <a href="file:///D:/Jandrei%20School%20Files/3rd%20YEAR%20FEU%20TECH%20FILES/Programming/MyProjectFile/MyProjectFile/projects.html">Go back to Projects page</a>
+  <img src="sdgslogo.png" width="75" height="75"> 
+  <h1> UN SDGs Registration Form</h1>
+  <form name ="Login Form">
+  <label for = "fname">First Name:</label>
+  <br><input type = "text" name = "First Name" required> <br> <br>
+  <label for = "lname">Last Name:</label>
+  <br><input type = "text" name = "Last Name" required><br> <br>
+  <label for = "email">Email Address:</label>
+  <br><input type = "text" name = "Email Address" required><br> <br>
+  <label for = "Age">Age:</label>
+  <br><input type = "number" name = "age" min = "18" required><br> <br>
+  
+   <label for = "Gender" required> Gender:</label>
+	<select>
+	<option value = "Male"> Male </option><br> 
+	<option value = "Female"> Female </option><br> 
+	<option value = "Others"> Others... </option><br> 
+	</select>
+	<label for="others">If Others, please specify:</label><br> 
+	<textarea id="others" name="Other" rows="2" cols="30" placeholder="Please specify...">
+	</textarea>
+	<br><br>
+	<br>
+	<br>
+	<label for = "17SDGs"> 17 Sustainable Development Goals</label> <br>
+	<input type = "checkbox"> No Poverty <br>
+	<input type = "checkbox"> Zero Hunger <br>
+	<input type = "checkbox"> Good Health and Well-being <br>
+	<input type = "checkbox"> Quality Education <br>
+	<input type = "checkbox"> Gender Equality <br>
+	<input type = "checkbox"> Clean Water and Sanitation <br>
+	<input type = "checkbox"> Affordable and Clean Energy <br>
+	<input type = "checkbox"> Decent Work and Economic Growth <br>
+	<input type = "checkbox"> Industry, Innovation and Infrastructure <br>
+	<input type = "checkbox"> Reduced Inequality <br>
+	<input type = "checkbox"> Sustainable Cities and Communities <br>
+	<input type = "checkbox"> Responsible Consumption and Production <br>
+	<input type = "checkbox"> Climate Action <br>
+	<input type = "checkbox"> Life Below Water <br>
+	<input type = "checkbox"> Life on Land <br>
+	<input type = "checkbox"> Peace, Justice and Strong Institutions <br>
+	<input type = "checkbox"> Partnerships for the Goals <br>
+	<br>
+	<input type = "submit" value = "submit"><br>
+	<script>
+  window.addEventListener("load", () => {
+  const splash = document.getElementById("splash-screen");
+  setTimeout(() => {
+    splash.classList.add("fade-out");
+  }, 5000); 
+  setTimeout(() => {
+    splash.style.display = "none";
+  }, 4000);
+});
+</script>
+  </body>
+  
